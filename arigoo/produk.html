@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daftar Produk - Toko Aksesoris NIDA</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>NIDA</h1>
+        <nav>
+          <a href="menu.html">Beranda</a>
+          <a href="keranjang.html">Keranjang</a>
+          <a href="#" onclick="logout()">Logout</a>
+        </nav>
+      </header>
+
+      <div
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 40px;
+          border-bottom: 1px solid #eee;
+          padding-bottom: 20px;
+        "
+      >
+        <h2
+          id="judul-kategori"
+          style="font-family: 'Playfair Display'; font-size: 2rem"
+        >
+          Daftar Produk
+        </h2>
+        <a
+          href="menu.html"
+          style="
+            text-decoration: none;
+            color: #666;
+            font-size: 0.9rem;
+            font-weight: 500;
+          "
+          >&larr; KEMBALI</a
+        >
+      </div>
+
+      <div id="container-produk" class="product-list">
+        <!-- Produk akan di-render oleh script.js di sini -->
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

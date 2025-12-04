@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keranjang - Toko Aksesoris NIDA</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>NIDA</h1>
+        <nav>
+          <a href="menu.html">Beranda</a>
+          <a href="keranjang.html" style="color: #d4af37">Keranjang</a>
+          <a href="#" onclick="logout()">Logout</a>
+        </nav>
+      </header>
+
+      <h2 style="font-family: 'Playfair Display'; margin-bottom: 10px">
+        Shopping Cart
+      </h2>
+      <p style="margin-bottom: 30px; color: #888">
+        Periksa kembali item pilihan Anda sebelum checkout.
+      </p>
+
+      <table class="cart-table">
+        <thead>
+          <tr>
+            <th>Produk</th>
+            <th>Harga</th>
+            <th style="text-align: center">Opsi</th>
+          </tr>
+        </thead>
+        <tbody id="list-keranjang">
+          <!-- Item keranjang akan di-render di sini -->
+        </tbody>
+      </table>
+
+      <div class="cart-total">
+        <span style="font-size: 1rem; color: #333; font-weight: 400"
+          >Total Pembayaran:</span
+        >
+        <span id="total-harga">Rp 0</span>
+      </div>
+
+      <div
+        style="
+          display: flex;
+          justify-content: flex-end;
+          gap: 15px;
+          margin-top: 30px;
+        "
+      >
+        <button
+          class="btn-secondary"
+          onclick="window.location.href='menu.html'"
+          style="width: auto"
+        >
+          Lanjut Belanja
+        </button>
+        <button
+          id="btn-checkout"
+          onclick="checkout()"
+          style="width: auto; background: #d4af37"
+        >
+          Checkout Securely
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

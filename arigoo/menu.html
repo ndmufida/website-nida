@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu Utama - Toko Aksesoris NIDA</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>NIDA</h1>
+        <p>jewelry</p>
+        <nav>
+          <a href="menu.html" style="color: #d4af37">Beranda</a>
+          <a href="keranjang.html">Keranjang</a>
+          <a href="#" onclick="logout()" style="color: #d44">Logout</a>
+        </nav>
+      </header>
+
+      <h2 class="welcome-text" id="welcome-user">Selamat Datang </h2>
+
+      <div class="category-grid">
+        <!-- Kategori Gelang -->
+        <div
+          class="category-card"
+          onclick="window.location.href='produk.html?kategori=gelang'"
+        >
+         <img src="Gemini_Generated_Image_4jdfij4jdfij4jdf.png">
+          <h3>Gelang</h3>
+          <p style="font-size: 0.85rem; color: #888; margin-top: 5px">
+            Sentuhan mewah di pergelangan tangan
+          </p>
+        </div>
+
+        <!-- Kategori Anting -->
+        <div
+          class="category-card"
+          onclick="window.location.href='produk.html?kategori=anting'"
+        >
+      <img src="Gemini_Generated_Image_uidmdzuidmdzuidm.png">
+          <h3>Anting</h3>
+          <p style="font-size: 0.85rem; color: #888; margin-top: 5px">
+          Kecantikan yang memikat dari setiap sudut
+          </p>
+        </div>
+
+        <!-- Kategori Kalung -->
+        <div
+          class="category-card"
+          onclick="window.location.href='produk.html?kategori=kalung'"
+        >
+         <img src="Gemini_Generated_Image_azfik4azfik4azfi.png">
+          <h3>Kalung</h3>
+          <p style="font-size: 0.85rem; color: #888; margin-top: 5px">
+      Anggun dengan kilau yang menawan di setiap momen
+          </p>
+        </div>
+
+        <!-- Kategori Cincin -->
+        <div
+          class="category-card"
+          onclick="window.location.href='produk.html?kategori=cincin'"
+        >
+         <img src="unnamed.jpg">
+          <h3>Cincin</h3>
+          <p style="font-size: 0.85rem; color: #888; margin-top: 5px">
+            Berkelas dengan pesona yang tak terlupakan
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

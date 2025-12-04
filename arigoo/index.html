@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Toko Aksesoris NIDA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>NIDA</h1>
+            <p>jewelry</p>
+        </header>
+
+        <div class="login-box">
+            <h2>Member Login</h2>
+            <p style="margin-bottom: 30px; color: #888; font-size: 0.9rem;">Masuk untuk melihat koleksi eksklusif kami</p>
+            
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Contoh: user">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Contoh: 123">
+            </div>
+
+            <p id="error-msg" style="color: #d44; display: none; margin-bottom: 20px; font-size: 0.9rem; background: #fee; padding: 10px; border-radius: 5px;">Username atau password salah!</p>
+
+            <button onclick="login()">SIGN IN</button>
+            <p style="margin-top: 20px; font-size: 0.85rem; color: #999;">(Gunakan user / 123)</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
